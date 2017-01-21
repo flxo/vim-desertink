@@ -251,7 +251,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   endfun
   " }}}
 
-  call <SID>X("Normal", "ffffff", "222222", "")
+  call <SID>X("Normal", "ffffff", "", "")
   call <SID>X("NonText", "addbe7", "3D3D3D", "bold")
 
   highlight! link TabLineFill Normal
@@ -293,7 +293,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   "call <SID>X("VertSplit", "c2bfa5", "7f7f7f", "reverse")
   highlight! link VertSplit LineNr
 
-  call <SID>X("LineNr", "444444", "1a1a1a", "", "239")
+  call <SID>X("LineNr", "444444", "", "", "239")
   "call <SID>X("CursorLineNr", "aaaaaa", "1a1a1a", "", "253")
   highlight! link CursorLineNr Folded
 
