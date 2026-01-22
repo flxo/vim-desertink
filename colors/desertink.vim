@@ -524,6 +524,67 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   highlight! link GitGutterChangeLine GitSignsChangeLn
   highlight! link GitGutterDeleteLine GitSignsDeleteLn
 
+  " Telescope highlight groups
+  call <SID>X("TelescopeNormal", "ffffff", "303030", "")
+  call <SID>X("TelescopeBorder", "555555", "303030", "")
+  call <SID>X("TelescopeTitle", "f0e260", "303030", "bold")
+
+  call <SID>X("TelescopePromptNormal", "ffffff", "383838", "")
+  call <SID>X("TelescopePromptBorder", "555555", "383838", "")
+  call <SID>X("TelescopePromptTitle", "f0e260", "383838", "bold")
+  call <SID>X("TelescopePromptPrefix", "f0e260", "383838", "")
+  call <SID>X("TelescopePromptCounter", "888888", "383838", "")
+
+  call <SID>X("TelescopeResultsNormal", "ffffff", "303030", "")
+  call <SID>X("TelescopeResultsBorder", "555555", "303030", "")
+  call <SID>X("TelescopeResultsTitle", "f0e260", "303030", "bold")
+
+  call <SID>X("TelescopePreviewNormal", "ffffff", "282828", "")
+  call <SID>X("TelescopePreviewBorder", "555555", "282828", "")
+  call <SID>X("TelescopePreviewTitle", "f0e260", "282828", "bold")
+  call <SID>X("TelescopePreviewLine", "", "3a3a3a", "")
+
+  call <SID>X("TelescopeSelection", "ffffff", "404040", "bold")
+  call <SID>X("TelescopeSelectionCaret", "f0e260", "404040", "")
+  call <SID>X("TelescopeMultiSelection", "98fb98", "", "")
+  call <SID>X("TelescopeMultiIcon", "98fb98", "", "")
+
+  call <SID>X("TelescopeMatching", "ffaf00", "", "bold")
+
+  " nvim-cmp highlight groups
+  call <SID>X("CmpItemAbbr", "bbbbbb", "", "")
+  call <SID>X("CmpItemAbbrDeprecated", "666666", "", "strikethrough")
+  call <SID>X("CmpItemAbbrMatch", "ffaf00", "", "bold")
+  call <SID>X("CmpItemAbbrMatchFuzzy", "ffaf00", "", "bold")
+  call <SID>X("CmpItemKind", "98fb98", "", "")
+  call <SID>X("CmpItemMenu", "666666", "", "")
+
+  call <SID>X("CmpItemKindText", "ffffff", "", "")
+  call <SID>X("CmpItemKindMethod", "98fb98", "", "")
+  call <SID>X("CmpItemKindFunction", "98fb98", "", "")
+  call <SID>X("CmpItemKindConstructor", "91b365", "", "")
+  call <SID>X("CmpItemKindField", "ffffff", "", "")
+  call <SID>X("CmpItemKindVariable", "ffffff", "", "")
+  call <SID>X("CmpItemKindClass", "91b365", "", "")
+  call <SID>X("CmpItemKindInterface", "91b365", "", "")
+  call <SID>X("CmpItemKindModule", "98fb98", "", "")
+  call <SID>X("CmpItemKindProperty", "ffffff", "", "")
+  call <SID>X("CmpItemKindUnit", "ff8080", "", "")
+  call <SID>X("CmpItemKindValue", "ff8080", "", "")
+  call <SID>X("CmpItemKindEnum", "91b365", "", "")
+  call <SID>X("CmpItemKindKeyword", "f0e260", "", "")
+  call <SID>X("CmpItemKindSnippet", "ffc266", "", "")
+  call <SID>X("CmpItemKindColor", "ffc266", "", "")
+  call <SID>X("CmpItemKindFile", "87ceeb", "", "")
+  call <SID>X("CmpItemKindReference", "87ceeb", "", "")
+  call <SID>X("CmpItemKindFolder", "87ceeb", "", "")
+  call <SID>X("CmpItemKindEnumMember", "ff8080", "", "")
+  call <SID>X("CmpItemKindConstant", "ff8080", "", "")
+  call <SID>X("CmpItemKindStruct", "91b365", "", "")
+  call <SID>X("CmpItemKindEvent", "ffc266", "", "")
+  call <SID>X("CmpItemKindOperator", "f0e260", "", "")
+  call <SID>X("CmpItemKindTypeParameter", "91b365", "", "")
+
   " Terminal colors for Neovim's :terminal
   if has('nvim')
     let g:terminal_color_0  = '#303030'  " black
