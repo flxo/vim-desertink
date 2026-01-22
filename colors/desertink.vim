@@ -332,6 +332,51 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("Special", "ffc266", "", "")
   "Underlined
 
+  " Neovim LSP diagnostic highlights
+  call <SID>X("DiagnosticError", "ff8080", "", "")
+  call <SID>X("DiagnosticWarn", "ffaf00", "", "")
+  call <SID>X("DiagnosticInfo", "87ceeb", "", "")
+  call <SID>X("DiagnosticHint", "98fb98", "", "")
+  call <SID>X("DiagnosticOk", "91b365", "", "")
+
+  call <SID>X("DiagnosticUnderlineError", "", "", "undercurl")
+  call <SID>X("DiagnosticUnderlineWarn", "", "", "undercurl")
+  call <SID>X("DiagnosticUnderlineInfo", "", "", "undercurl")
+  call <SID>X("DiagnosticUnderlineHint", "", "", "undercurl")
+  call <SID>X("DiagnosticUnderlineOk", "", "", "undercurl")
+
+  call <SID>X("DiagnosticVirtualTextError", "ff8080", "3a2020", "")
+  call <SID>X("DiagnosticVirtualTextWarn", "ffaf00", "3a3020", "")
+  call <SID>X("DiagnosticVirtualTextInfo", "87ceeb", "203040", "")
+  call <SID>X("DiagnosticVirtualTextHint", "98fb98", "203a20", "")
+  call <SID>X("DiagnosticVirtualTextOk", "91b365", "203a20", "")
+
+  call <SID>X("DiagnosticFloatingError", "ff8080", "333333", "")
+  call <SID>X("DiagnosticFloatingWarn", "ffaf00", "333333", "")
+  call <SID>X("DiagnosticFloatingInfo", "87ceeb", "333333", "")
+  call <SID>X("DiagnosticFloatingHint", "98fb98", "333333", "")
+  call <SID>X("DiagnosticFloatingOk", "91b365", "333333", "")
+
+  call <SID>X("DiagnosticSignError", "ff8080", "2a2a2a", "")
+  call <SID>X("DiagnosticSignWarn", "ffaf00", "2a2a2a", "")
+  call <SID>X("DiagnosticSignInfo", "87ceeb", "2a2a2a", "")
+  call <SID>X("DiagnosticSignHint", "98fb98", "2a2a2a", "")
+  call <SID>X("DiagnosticSignOk", "91b365", "2a2a2a", "")
+
+  " LSP highlight groups
+  call <SID>X("LspReferenceText", "", "404040", "")
+  call <SID>X("LspReferenceRead", "", "404040", "")
+  call <SID>X("LspReferenceWrite", "", "404040", "bold")
+  call <SID>X("LspSignatureActiveParameter", "", "404040", "bold")
+  call <SID>X("LspCodeLens", "888888", "", "")
+  call <SID>X("LspCodeLensSeparator", "555555", "", "")
+  call <SID>X("LspInlayHint", "888888", "2a2a2a", "")
+
+  " Floating windows
+  call <SID>X("NormalFloat", "ffffff", "333333", "")
+  call <SID>X("FloatBorder", "888888", "333333", "")
+  call <SID>X("FloatTitle", "f0e260", "333333", "bold")
+
   " delete functions {{{
   delf <SID>X
   delf <SID>rgb
