@@ -12,7 +12,7 @@ let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': 
 " Color definitions [guifg, guibg, ctermfg, ctermbg]
 " Normal mode
 let s:N1 = [ '#005f00', '#afd700', 22, 148 ]   " darkestgreen & brightgreen
-let s:N2 = [ '#bbbbbb', '#505050', 250, 238 ]  " gray8 & gray4
+let s:N2 = [ '#bbbbbb', '#3a3a3a', 250, 237 ]  " gray8 & darkgray
 let s:N3 = [ '#ffffff', '#303030', 231, 235 ]  " white & gray2
 
 " Insert mode

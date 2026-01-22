@@ -22,7 +22,7 @@ local colors = {
   -- Common
   white       = '#ffffff',
   gray1       = '#303030',
-  gray2       = '#505050',
+  gray2       = '#3a3a3a',
   gray3       = '#777777',
   gray4       = '#bbbbbb',
   darkgray    = '#3a3a3a',
