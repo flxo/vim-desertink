@@ -492,6 +492,38 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("@tag.attribute", "98fb98", "", "")
   call <SID>X("@tag.delimiter", "ffffff", "", "")
 
+  " GitSigns highlight groups
+  call <SID>X("GitSignsAdd", "91b365", "2a2a2a", "")
+  call <SID>X("GitSignsChange", "ffaf00", "2a2a2a", "")
+  call <SID>X("GitSignsDelete", "ff8080", "2a2a2a", "")
+  call <SID>X("GitSignsChangedelete", "ffc266", "2a2a2a", "")
+  call <SID>X("GitSignsTopdelete", "ff8080", "2a2a2a", "")
+  call <SID>X("GitSignsUntracked", "87ceeb", "2a2a2a", "")
+
+  call <SID>X("GitSignsAddNr", "91b365", "", "")
+  call <SID>X("GitSignsChangeNr", "ffaf00", "", "")
+  call <SID>X("GitSignsDeleteNr", "ff8080", "", "")
+  call <SID>X("GitSignsChangedeleteNr", "ffc266", "", "")
+  call <SID>X("GitSignsTopdeleteNr", "ff8080", "", "")
+  call <SID>X("GitSignsUntrackedNr", "87ceeb", "", "")
+
+  call <SID>X("GitSignsAddLn", "", "2a3a2a", "")
+  call <SID>X("GitSignsChangeLn", "", "3a3020", "")
+  call <SID>X("GitSignsDeleteLn", "", "3a2020", "")
+
+  call <SID>X("GitSignsAddInline", "", "3a5a3a", "")
+  call <SID>X("GitSignsChangeInline", "", "5a5030", "")
+  call <SID>X("GitSignsDeleteInline", "", "5a3030", "")
+
+  " GitGutter highlight groups (for vim-gitgutter compatibility)
+  highlight! link GitGutterAdd GitSignsAdd
+  highlight! link GitGutterChange GitSignsChange
+  highlight! link GitGutterDelete GitSignsDelete
+  highlight! link GitGutterChangeDelete GitSignsChangedelete
+  highlight! link GitGutterAddLine GitSignsAddLn
+  highlight! link GitGutterChangeLine GitSignsChangeLn
+  highlight! link GitGutterDeleteLine GitSignsDeleteLn
+
   " Terminal colors for Neovim's :terminal
   if has('nvim')
     let g:terminal_color_0  = '#303030'  " black
