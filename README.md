@@ -27,7 +27,7 @@ A dark Vim/Neovim colorscheme based on the classic desert theme, featuring a dar
 
 ```lua
 {
-  'toupeira/vim-desertink',
+  'flxo/vim-desertink',
   lazy = false,
   priority = 1000,
   config = function()
@@ -39,7 +39,7 @@ A dark Vim/Neovim colorscheme based on the classic desert theme, featuring a dar
 ### Using [vim-plug](https://github.com/junegunn/vim-plug)
 
 ```vim
-Plug 'toupeira/vim-desertink'
+Plug 'flxo/vim-desertink'
 ```
 
 Then add to your config:
@@ -52,7 +52,7 @@ colorscheme desertink
 
 ```lua
 use {
-  'toupeira/vim-desertink',
+  'flxo/vim-desertink',
   config = function()
     vim.cmd([[colorscheme desertink]])
   end
@@ -64,7 +64,7 @@ use {
 Clone the repository and add it to your runtime path:
 
 ```bash
-git clone https://github.com/toupeira/vim-desertink.git ~/.vim/pack/plugins/start/vim-desertink
+git clone https://github.com/flxo/vim-desertink.git ~/.vim/pack/plugins/start/vim-desertink
 ```
 
 ## Usage
@@ -127,5 +127,6 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## Credits
 
-- Original author: [Markus Koller](https://github.com/toupeira)
+- Original colorscheme author: Markus Koller
+- Maintained by: [flxo](https://github.com/flxo)
 - Based on the classic Vim desert colorscheme
