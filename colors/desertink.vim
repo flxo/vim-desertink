@@ -377,6 +377,121 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("FloatBorder", "888888", "333333", "")
   call <SID>X("FloatTitle", "f0e260", "333333", "bold")
 
+  " Treesitter highlight groups
+  " Identifiers
+  call <SID>X("@variable", "ffffff", "", "")
+  call <SID>X("@variable.builtin", "98fb98", "", "")
+  call <SID>X("@variable.parameter", "ffffff", "", "")
+  call <SID>X("@variable.member", "ffffff", "", "")
+
+  call <SID>X("@constant", "ff8080", "", "")
+  call <SID>X("@constant.builtin", "ff8080", "", "bold")
+  call <SID>X("@constant.macro", "ff8080", "", "")
+
+  call <SID>X("@module", "98fb98", "", "")
+  call <SID>X("@module.builtin", "98fb98", "", "")
+  call <SID>X("@label", "ffc266", "", "")
+
+  " Literals
+  call <SID>X("@string", "ff8080", "", "")
+  call <SID>X("@string.documentation", "87ceeb", "", "")
+  call <SID>X("@string.regexp", "ffc266", "", "")
+  call <SID>X("@string.escape", "ffc266", "", "bold")
+  call <SID>X("@string.special", "ffc266", "", "")
+  call <SID>X("@string.special.symbol", "ffc266", "", "")
+  call <SID>X("@string.special.url", "87ceeb", "", "underline")
+  call <SID>X("@string.special.path", "ffc266", "", "")
+
+  call <SID>X("@character", "ff8080", "", "")
+  call <SID>X("@character.special", "ffc266", "", "")
+
+  call <SID>X("@boolean", "ff8080", "", "bold")
+  call <SID>X("@number", "ff8080", "", "")
+  call <SID>X("@number.float", "ff8080", "", "")
+
+  " Types
+  call <SID>X("@type", "91b365", "", "bold")
+  call <SID>X("@type.builtin", "91b365", "", "bold")
+  call <SID>X("@type.definition", "91b365", "", "bold")
+  call <SID>X("@type.qualifier", "f0e260", "", "bold")
+
+  call <SID>X("@attribute", "cd5c5c", "", "")
+  call <SID>X("@property", "ffffff", "", "")
+
+  " Functions
+  call <SID>X("@function", "98fb98", "", "")
+  call <SID>X("@function.builtin", "98fb98", "", "bold")
+  call <SID>X("@function.call", "98fb98", "", "")
+  call <SID>X("@function.macro", "cd5c5c", "", "bold")
+  call <SID>X("@function.method", "98fb98", "", "")
+  call <SID>X("@function.method.call", "98fb98", "", "")
+
+  call <SID>X("@constructor", "91b365", "", "")
+
+  call <SID>X("@operator", "f0e260", "", "")
+
+  " Keywords
+  call <SID>X("@keyword", "f0e260", "", "bold")
+  call <SID>X("@keyword.coroutine", "f0e260", "", "bold")
+  call <SID>X("@keyword.function", "f0e260", "", "bold")
+  call <SID>X("@keyword.operator", "f0e260", "", "bold")
+  call <SID>X("@keyword.import", "cd5c5c", "", "bold")
+  call <SID>X("@keyword.storage", "f0e260", "", "bold")
+  call <SID>X("@keyword.repeat", "f0e260", "", "bold")
+  call <SID>X("@keyword.return", "f0e260", "", "bold")
+  call <SID>X("@keyword.debug", "fa8072", "", "bold")
+  call <SID>X("@keyword.exception", "f0e260", "", "bold")
+
+  call <SID>X("@keyword.conditional", "f0e260", "", "bold")
+  call <SID>X("@keyword.conditional.ternary", "f0e260", "", "")
+
+  call <SID>X("@keyword.directive", "cd5c5c", "", "bold")
+  call <SID>X("@keyword.directive.define", "cd5c5c", "", "bold")
+
+  " Punctuation
+  call <SID>X("@punctuation.delimiter", "ffffff", "", "")
+  call <SID>X("@punctuation.bracket", "ffffff", "", "")
+  call <SID>X("@punctuation.special", "ffc266", "", "")
+
+  " Comments
+  call <SID>X("@comment", "87ceeb", "", "")
+  call <SID>X("@comment.documentation", "87ceeb", "", "")
+  call <SID>X("@comment.error", "ffffff", "913d3b", "bold")
+  call <SID>X("@comment.warning", "f9f747", "d75f00", "bold")
+  call <SID>X("@comment.todo", "f9f747", "d75f00", "bold")
+  call <SID>X("@comment.note", "87ceeb", "333333", "bold")
+
+  " Markup
+  call <SID>X("@markup.strong", "ffffff", "", "bold")
+  call <SID>X("@markup.italic", "ffffff", "", "italic")
+  call <SID>X("@markup.strikethrough", "666666", "", "strikethrough")
+  call <SID>X("@markup.underline", "ffffff", "", "underline")
+
+  call <SID>X("@markup.heading", "f0e260", "", "bold")
+
+  call <SID>X("@markup.quote", "87ceeb", "", "")
+  call <SID>X("@markup.math", "ff8080", "", "")
+  call <SID>X("@markup.environment", "cd5c5c", "", "")
+
+  call <SID>X("@markup.link", "87ceeb", "", "underline")
+  call <SID>X("@markup.link.label", "ffc266", "", "")
+  call <SID>X("@markup.link.url", "87ceeb", "", "underline")
+
+  call <SID>X("@markup.raw", "ff8080", "", "")
+  call <SID>X("@markup.raw.block", "ff8080", "", "")
+
+  call <SID>X("@markup.list", "f0e260", "", "")
+  call <SID>X("@markup.list.checked", "91b365", "", "")
+  call <SID>X("@markup.list.unchecked", "666666", "", "")
+
+  call <SID>X("@diff.plus", "d7ffaf", "5f875f", "")
+  call <SID>X("@diff.minus", "ff8080", "cc6666", "")
+  call <SID>X("@diff.delta", "d7d7ff", "5f5f87", "")
+
+  call <SID>X("@tag", "f0e260", "", "")
+  call <SID>X("@tag.attribute", "98fb98", "", "")
+  call <SID>X("@tag.delimiter", "ffffff", "", "")
+
   " delete functions {{{
   delf <SID>X
   delf <SID>rgb
