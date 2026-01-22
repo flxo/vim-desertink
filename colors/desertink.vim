@@ -492,6 +492,26 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("@tag.attribute", "98fb98", "", "")
   call <SID>X("@tag.delimiter", "ffffff", "", "")
 
+  " Terminal colors for Neovim's :terminal
+  if has('nvim')
+    let g:terminal_color_0  = '#303030'  " black
+    let g:terminal_color_1  = '#ff8080'  " red
+    let g:terminal_color_2  = '#91b365'  " green
+    let g:terminal_color_3  = '#f0e260'  " yellow
+    let g:terminal_color_4  = '#87ceeb'  " blue
+    let g:terminal_color_5  = '#cd5c5c'  " magenta
+    let g:terminal_color_6  = '#98fb98'  " cyan
+    let g:terminal_color_7  = '#bbbbbb'  " white
+    let g:terminal_color_8  = '#555555'  " bright black
+    let g:terminal_color_9  = '#ff8080'  " bright red
+    let g:terminal_color_10 = '#afd700'  " bright green
+    let g:terminal_color_11 = '#ffaf00'  " bright yellow
+    let g:terminal_color_12 = '#addbe7'  " bright blue
+    let g:terminal_color_13 = '#ffc266'  " bright magenta
+    let g:terminal_color_14 = '#98fb98'  " bright cyan
+    let g:terminal_color_15 = '#ffffff'  " bright white
+  endif
+
   " delete functions {{{
   delf <SID>X
   delf <SID>rgb
